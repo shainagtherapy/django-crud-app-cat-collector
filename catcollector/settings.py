@@ -53,7 +53,7 @@ MIDDLEWARE = [
 ROOT_URLCONF = 'catcollector.urls'
 
 TEMPLATES = [
-    {
+        {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [],
         'APP_DIRS': True,
@@ -63,8 +63,8 @@ TEMPLATES = [
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
             ],
+            },
         },
-    },
 ]
 
 WSGI_APPLICATION = 'catcollector.wsgi.application'

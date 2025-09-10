@@ -28,3 +28,7 @@ class Feeding(models.Model):
 
     def __str__(self):
         return f"{self.get_meal_display()} on {self.date}"
+    
+    # Define the default order of feedings
+    class Meta:
+        ordering = ['-date']  # This line makes the newest feedings appear first, no dash orders in oldest-newest
